@@ -1,0 +1,133 @@
+/* Importação das fontes */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Merriweather:wght@400;700&family=Roboto:wght@300;400;500&display=swap');
+
+/* Paleta de cores */
+:root {
+    --primary-color: #2C3E50;
+    --secondary-color: #18BC9C;
+    --tertiary-color: #E74C3C;
+    --background-color: #ECF0F1;
+    --text-color: #2C3E50;
+    --text-white-bg-color: #000000;
+    --white-bg: #FFFFFF;
+}
+
+/* Resetando margens e paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilizando o body */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Cabeçalho fixo */
+header {
+    background-color: var(--primary-color);
+    color: var(--white-bg);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 15px 0;
+    z-index: 1000;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+}
+
+/* Ajustando o conteúdo para não ficar abaixo do header */
+body {
+    padding-top: 80px;
+}
+
+/* Títulos */
+h1, h2 {
+    font-family: 'Merriweather', serif;
+    color: var(--primary-color);
+}
+
+/* Botões */
+button {
+    background-color: var(--secondary-color);
+    color: var(--white-bg);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+
+button:hover {
+    background-color: var(--tertiary-color);
+}
+
+/* Links */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--tertiary-color);
+}
+
+/* Estilo para textos longos */
+p, textarea {
+    background-color: var(--white-bg);
+    color: var(--text-white-bg-color);
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Formulários */
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+}
+
+
+
+
+/* Exemplo de uso de @font-face 
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url('fonts/Merriweather-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lobster';
+    src: url('fonts/Lobster-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Agora, você pode usar essas fontes no seu CSS 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Merriweather', serif;
+}
+
+header {
+    font-family: 'Lobster', cursive;
+}
+*/
